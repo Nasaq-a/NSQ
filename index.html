@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>نسق</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1 class="logo">نسق</h1>
+
+  <div class="settings-wrapper">
+    <button class="settings-btn" id="settingsBtn">
+      <span class="line l1"></span>
+      <span class="line l2"></span>
+      <span class="line l3"></span>
+      <span class="line l4"></span>
+    </button>
+
+    <div class="settings-menu" id="settingsMenu">
+      <div>الحساب</div>
+      <div>الاشتراك</div>
+      <div>الأرشيف</div>
+      <div>الإعدادات</div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="task-box">
+    <input type="text" id="taskInput" placeholder="أدخل مهمتك اليومية">
+    <button onclick="addTask()">إضافة</button>
+  </div>
+
+  <ul id="taskList"></ul>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
