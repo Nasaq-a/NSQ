@@ -18,14 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // فتح / إغلاق قائمة الإعدادات
   settingsBtn.addEventListener("click", function () {
-    if (settingsMenu.style.display === "block") {
-      settingsMenu.style.display = "none";
-    } else {
-      settingsMenu.style.display = "block";
-    }
+    settingsMenu.style.display = settingsMenu.style.display === "block" ? "none" : "block";
   });
-
-  // اختبار أن JS يعمل
-  console.log("JavaScript يعمل بشكل صحيح");
 
 });
