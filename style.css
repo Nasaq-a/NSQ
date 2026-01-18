@@ -1,0 +1,117 @@
+/* عام */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #F5F0E1; /* بيج كريمي */
+  color: #333;
+}
+
+/* الهيدر */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.logo {
+  font-family: 'HS Headline', sans-serif;
+  font-size: 28px;
+  color: #744B38; /* بني */
+}
+
+/* إعدادات */
+.settings-wrapper {
+  position: relative;
+}
+
+/* الزر: مربع بحواف ناعمة */
+.settings-btn {
+  width: 40px;
+  height: 40px;
+  background: #F5F0E1; /* نفس البيج الكريمي */
+  border: 2px solid #744B38; /* بني */
+  border-radius: 12px; /* حواف ناعمة */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px;
+  cursor: pointer;
+}
+
+/* الخطوط الأربعة */
+.settings-btn .line {
+  width: 24px;
+  height: 2px;
+  background: #744B38;
+  border-radius: 1px; /* لجعلها ناعمة */
+}
+
+/* القائمة المنبثقة */
+.settings-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #744B38;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+.settings-menu div {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.settings-menu div:hover {
+  background-color: #F5F0E1;
+}
+
+/* المحتوى */
+.container {
+  padding: 20px;
+}
+
+.task-box {
+  display: flex;
+  gap: 10px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #744B38;
+  color: #fff;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
